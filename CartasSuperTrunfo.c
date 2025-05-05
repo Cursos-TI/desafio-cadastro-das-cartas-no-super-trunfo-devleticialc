@@ -28,13 +28,13 @@ int main(){
     int codigocidade;
     char nomedacidade[50];
     float area;
-    int população;
-    float pib;
+    int populaçao;
+    double pib;
     int pontosturisticos;
 
       // Cadastrar as cartas:
 
-    printf ("Cadastro da cidade" \n);
+    printf("Cadastro da cidade\n");
 
     printf("Digite o codigo da cidade: ");
     scanf("%d", &codigocidade);
@@ -45,14 +45,14 @@ int main(){
     printf("Digite a area da cidade:  ");
     scanf("%f", &area);
 
-    printf("Digite a população:  ");
-    scanf("%d", &população);
+    printf("Digite a populaçao:  ");
+    scanf("%d", &populaçao);
 
     printf("Digite o valor do pib: (Em bilhões):  ");
     scanf("%lf", &pib);
 
     printf("Digite os pontos turisticos:  ");
-    sacanf("%d", &pontosturisticos)
+    sacanf("%d", &pontosturisticos);
 
       // Exibir as cartas:
 
@@ -61,24 +61,10 @@ int main(){
     printf("Codigo: %d\n", codigocidade);
     printf("Nome: %s\n", nomedacidade);
     printf("Area: %f\n", area);
-    printf("População: %d\n", população);
+    printf("População: %d\n", populaçao);
     printf("Pib: %lf", pib);
-    printf("Pontos turisticos: %d\n", pontosturisticos)
+    printf("Pontos turisticos: %d\n", pontosturisticos);
 
     return 0;
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
 
 }
