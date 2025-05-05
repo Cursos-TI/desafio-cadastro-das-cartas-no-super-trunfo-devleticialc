@@ -28,7 +28,7 @@ int main() {
 
 struct carta {
 
-  char nomedacidade[50];
+  int nomedacidade[50];
   float area;
   int populacao; 
   float pib;
@@ -44,10 +44,10 @@ struct carta {
       // Carta 1:
       // Carta 2:
 
-      printf("Cadastro carta1:\n")
+      printf("Cadastro carta1:\n");
 
       printf("Digite o nome da cidade:  ");
-      scanf(" %s", &carta1.nomedacidade);
+      scanf(" %d", &carta1.nomedacidade);
   
       printf("Digite a area da cidade:  ");
       scanf("%f", &carta1.area);
@@ -61,10 +61,10 @@ struct carta {
       printf("Digite os pontos turisticos:  ");
       scanf("%d", &carta1.pontosturisticos); 
     
-    printf("Cadastro carta2:\n")
+    printf("Cadastro carta2:\n");
 
     printf("Digite o nome da cidade:  ");
-    scanf(" %s", &carta2.nomedacidade);
+    scanf(" %d", &carta2.nomedacidade);
 
     printf("Digite a area da cidade:  ");
     scanf("%f", &carta2.area);
@@ -82,7 +82,7 @@ struct carta {
 
     printf("\nPrimeira carta cadastrada\n");
     
-     printf("Nome: %s\n", carta1.nomedacidade);
+    printf("Nome: %d\n", carta1.nomedacidade);
     printf("Area: %f\n", carta1.area);
     printf("População: %d\n", carta1.populacao);
     printf("Pib: %lf\n", carta1.pib);
@@ -90,7 +90,7 @@ struct carta {
 
     printf("\nSegunda carta cadastrada\n");
     
-    printf("Nome: %s\n", carta2.nomedacidade);
+    printf("Nome: %d\n", carta2.nomedacidade);
     printf("Area: %f\n", carta2.area);
     printf("População: %d\n", carta2.populacao);
     printf("Pib: %lf\n", carta2.pib);
