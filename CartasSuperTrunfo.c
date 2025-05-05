@@ -20,50 +20,81 @@ int main() {
 
     return 0;
 }
-// Desafio Super Trunfo -Países
-// Tema 1 - Cadastro de Cartas
 
-int main(){
-   
-    int codigocidade;
-    char nomedacidade[50];
-    float area;
-    int populaçao;
-    double pib;
-    int pontosturisticos;
+#include <stdio.h>
+
+// Desafio Super Trunfo -Países
+// Estrura do cadastro de Cartas
+
+struct carta {
+
+  char nomedacidade[50];
+  float area;
+  int populacao; 
+  float pib;
+  int pontosturisticos;
+
+};
+
+  int main(){
+
+    struct carta carta1, carta2;
 
       // Cadastrar as cartas:
+      // Carta 1:
+      // Carta 2:
 
-    printf("Cadastro da cidade\n");
+      printf("Cadastro carta1:\n")
 
-    printf("Digite o codigo da cidade: ");
-    scanf("%d", &codigocidade);
+      printf("Digite o nome da cidade:  ");
+      scanf(" %s", &carta1.nomedacidade);
+  
+      printf("Digite a area da cidade:  ");
+      scanf("%f", &carta1.area);
+  
+      printf("Digite a populacao:  ");
+      scanf("%d", &carta1.populacao);
+  
+      printf("Digite o valor do pib: (Em bilhões):  ");
+      scanf("%f", &carta1.pib);
+      
+      printf("Digite os pontos turisticos:  ");
+      scanf("%d", &carta1.pontosturisticos); 
     
+    printf("Cadastro carta2:\n")
+
     printf("Digite o nome da cidade:  ");
-    scanf("%s", &nomedacidade);
+    scanf(" %s", &carta2.nomedacidade);
 
     printf("Digite a area da cidade:  ");
-    scanf("%f", &area);
+    scanf("%f", &carta2.area);
 
-    printf("Digite a populaçao:  ");
-    scanf("%d", &populaçao);
+    printf("Digite a populacao:  ");
+    scanf("%d", &carta2.populacao);
 
     printf("Digite o valor do pib: (Em bilhões):  ");
-    scanf("%lf", &pib);
+    scanf("%f", &carta2.pib);
 
     printf("Digite os pontos turisticos:  ");
-    sacanf("%d", &pontosturisticos);
+    scanf("%d", &carta2.pontosturisticos);
 
       // Exibir as cartas:
 
-    printf("Carta cadastrada");
+    printf("\nPrimeira carta cadastrada\n");
     
-    printf("Codigo: %d\n", codigocidade);
-    printf("Nome: %s\n", nomedacidade);
-    printf("Area: %f\n", area);
-    printf("População: %d\n", populaçao);
-    printf("Pib: %lf", pib);
-    printf("Pontos turisticos: %d\n", pontosturisticos);
+     printf("Nome: %s\n", carta1.nomedacidade);
+    printf("Area: %f\n", carta1.area);
+    printf("População: %d\n", carta1.populacao);
+    printf("Pib: %lf\n", carta1.pib);
+    printf("Pontos turisticos: %d\n", carta1.pontosturisticos);
+
+    printf("\nSegunda carta cadastrada\n");
+    
+    printf("Nome: %s\n", carta2.nomedacidade);
+    printf("Area: %f\n", carta2.area);
+    printf("População: %d\n", carta2.populacao);
+    printf("Pib: %lf\n", carta2.pib);
+    printf("Pontos turisticos: %d\n", carta2.pontosturisticos);
 
     return 0;
 
