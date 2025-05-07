@@ -47,7 +47,7 @@ struct carta {
       printf("Cadastro carta1:\n");
 
       printf("Digite o nome da cidade:  ");
-      scanf(" %s", &carta1.nomedacidade);
+      scanf(" %s", carta1.nomedacidade);
   
       printf("Digite a area da cidade:  ");
       scanf("%f", &carta1.area);
@@ -64,7 +64,7 @@ struct carta {
     printf("Cadastro carta2:\n");
 
     printf("Digite o nome da cidade:  ");
-    scanf(" %s", &carta2.nomedacidade);
+    scanf(" %s", carta2.nomedacidade);
 
     printf("Digite a area da cidade:  ");
     scanf("%f", &carta2.area);
@@ -85,7 +85,7 @@ struct carta {
     printf("Nome: %s\n", carta1.nomedacidade);
     printf("Area: %f\n", carta1.area);
     printf("População: %d\n", carta1.populacao);
-    printf("Pib: %lf\n", carta1.pib);
+    printf("Pib: %f\n", carta1.pib);
     printf("Pontos turisticos: %d\n", carta1.pontosturisticos);
 
     printf("\nSegunda carta cadastrada\n");
@@ -93,7 +93,7 @@ struct carta {
     printf("Nome: %s\n", carta2.nomedacidade);
     printf("Area: %f\n", carta2.area);
     printf("População: %d\n", carta2.populacao);
-    printf("Pib: %lf\n", carta2.pib);
+    printf("Pib: %f\n", carta2.pib);
     printf("Pontos turisticos: %d\n", carta2.pontosturisticos);
 
     return 0;
